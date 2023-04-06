@@ -41,14 +41,39 @@ event.target.outerHTML = '')
 
 
 
-//EVENT 5 MOUSEOVER 
+//EVENT #5 MOUSEOVER 
 document.body.addEventListener('mouseover', event => 
 onmouseover = (event) =>  event.target.style.color = "orange");
 
 
 
-//EVENT 5 SCROLL 
+//EVENT #6 KEYDOWN  (FUNCTIONS IF A CERTAIN KEY IS PRESSED)
 
-// document.body.addEventListener('scroll', event => 
-// onscroll = (event) => console.log('Its scrolling!!!!'));
+window.addEventListener('keydown', event => {
+console.log(event);
+});
+
+//EVENT #7 SCROLL  (FUNCTIONS IF A CERTAIN KEY IS PRESSED)
+
+window.addEventListener('scroll', event => {
+    console.log('event scoll fired!!');
+    });
+
+//EVENT #8 MOUSEMOVE (FUNCTIONS BASED ON WHERE MOUSE MOVES) 
+
+document.body.addEventListener('mousemove', event => {
+    event.target.style.background = 'red';
+});
+
+//EVENT #9 PASTE EVENT 
+document.addEventListener('paste', event => {
+    console.log('paste event fired');
+});
+
+//EVENT #10 CUT EVENT
+document.addEventListener('paste', event => {
+    console.log('cut event fired');
+});
 }
+
+
